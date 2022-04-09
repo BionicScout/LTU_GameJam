@@ -5,5 +5,7 @@ using UnityEngine;
 public class Character : MonoBehaviour {
 	//float pleanstness, energy;
 	public enum moods { HAPPY, SAD, ANGRY, CALM };
+	public string name;
 
+	public List<DialogueOption> dialogue;
 }

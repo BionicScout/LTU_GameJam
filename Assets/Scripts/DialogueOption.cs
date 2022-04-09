@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DialogueOption : MonoBehaviour {
+[System.Serializable]
+public class DialogueOption {
 	public bool unlocked;
-	public string text;
-	public Character.moods mood;
-	public DialogueOption nextUnlock;
 
-	public void checkMood(Character.moods currentMood) {
-		if(currentMood == mood) {
-			//nextUnlock = true;
-		}
-	}
+	[TextArea]
+	public string playerSelectText;
+
+	[TextArea]
+	public string[] characterSpeakText;
+
+	//public Character.moods mood;
+	//public DialogueOption nextUnlock;
+
+	//public void checkMood(Character.moods currentMood) {
+	//	if(currentMood == mood) {
+	//		//nextUnlock = true;
+	//	}
+	//}
 }
