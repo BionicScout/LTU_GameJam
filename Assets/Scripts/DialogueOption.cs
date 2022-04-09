@@ -9,8 +9,17 @@ public class DialogueOption {
 	[TextArea]
 	public string playerSelectText;
 
+	public Character.moods rightMood;
+	public Character.moods badMood;
+
 	[TextArea]
-	public string[] characterSpeakText;
+	public string[] rightMoodResponse;
+
+	[TextArea]
+	public string[] neutralMoodResponse;
+
+	[TextArea]
+	public string[] badMoodResponse;
 
 	//public Character.moods mood;
 	//public DialogueOption nextUnlock;

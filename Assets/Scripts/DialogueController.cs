@@ -82,13 +82,28 @@ public class DialogueController : MonoBehaviour {
 		}
 	}
 
-	public void buttonClick(int index) {
-		if (dialogueButtons[index] == null) 
+	public void buttonClick(int buttonIndex) {
+		if (dialogueButtons[buttonIndex] == null) 
 			return;
 
-		dialogueButtons[index].unlocked = false;
+		dialogueButtons[buttonIndex].unlocked = false;
 
-		foreach (string str in dialogueButtons[index].characterSpeakText) {
+		string[] displayText;
+
+		if (dialogueButtons[buttonIndex].rightMood == c.currentMood && dialogueButtons[buttonIndex].rightMood != Character.moods.NULL) {
+			displayText = dialogueButtons[buttonIndex].rightMoodResponse;
+			Debug.Log("Good");
+		}
+		else if (dialogueButtons[buttonIndex].badMood == c.currentMood && dialogueButtons[buttonIndex].badMood != Character.moods.NULL) {
+			displayText = dialogueButtons[buttonIndex].badMoodResponse;
+			Debug.Log("Bad");
+		}
+		else { 
+			displayText = dialogueButtons[buttonIndex].neutralMoodResponse;
+			Debug.Log("Neutral");
+		}
+
+		foreach (string str in displayText) {
 			characterNextText.Enqueue(str);
 		}
 
