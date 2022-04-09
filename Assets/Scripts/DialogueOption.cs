@@ -4,6 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 public class DialogueOption {
+	public string id;
 	public bool unlocked;
 
 	[TextArea]
@@ -21,12 +22,6 @@ public class DialogueOption {
 	[TextArea]
 	public string[] badMoodResponse;
 
-	//public Character.moods mood;
-	//public DialogueOption nextUnlock;
-
-	//public void checkMood(Character.moods currentMood) {
-	//	if(currentMood == mood) {
-	//		//nextUnlock = true;
-	//	}
-	//}
+	public string unlocksNextId;
+	public Character.moods unlockMood = Character.moods.NULL;
 }

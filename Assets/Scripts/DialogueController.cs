@@ -103,12 +103,20 @@ public class DialogueController : MonoBehaviour {
 			Debug.Log("Neutral");
 		}
 
+		checkUnlock(dialogueButtons[buttonIndex]);
+
 		foreach (string str in displayText) {
 			characterNextText.Enqueue(str);
 		}
 
 		text.text = characterNextText.Dequeue();
 		switchText();
+	}
+
+	void checkUnlock(DialogueOption dialogue) {
+		if(dialogue.unlockMood == c.currentMood || dialogue.rightMood == Character.moods.NULL) {
+			CharacterList.getDialogue(dialogue.unlocksNextId).unlocked = true;
+		}
 	}
 
 }

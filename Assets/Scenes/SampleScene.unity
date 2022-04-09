@@ -313,8 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This a test option. Responces the player can say go here. I will now continue
-    too type to see what texts looks like on two lines.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1031,8 +1030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This a test option. Responces the player can say go here. I will now continue
-    too type to see what texts looks like on two lines.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1515,8 +1513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This a test option. Responces the player can say go here. I will now continue
-    too type to see what texts looks like on two lines.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1659,24 +1656,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Ivan
+  currentMood: 2
   dialogue:
-  - unlocked: 1
+  - id: Ivan_1
+    unlocked: 1
     playerSelectText: Did you cheat on your wife?
-    characterSpeakText:
-    - WHY THE HELL WOULD I THAT DO!
-    - SHE IS THE ONE WHO CHEATED!
-  - unlocked: 0
-    playerSelectText: What is your favorite type of soda?
-    characterSpeakText:
-    - I'm not here to talk about soda
-  - unlocked: 1
+    rightMood: 3
+    badMood: 2
+    rightMoodResponse:
+    - Yes
+    neutralMoodResponse:
+    - Why do you care?
+    badMoodResponse:
+    - SHE CHEATED ON ME!
+    unlocksNextId: 
+    unlockMood: 4
+  - id: Ivan_2
+    unlocked: 1
     playerSelectText: I think your hot.
-    characterSpeakText:
-    - ...
-    - .......
-    - .........
+    rightMood: 4
+    badMood: 1
+    rightMoodResponse: []
+    neutralMoodResponse:
     - Thanks?
-  - unlocked: 1
+    badMoodResponse:
+    - Please Leave me alone
+    unlocksNextId: Ivan_3
+    unlockMood: 4
+  - id: Ivan_3
+    unlocked: 0
     playerSelectText: Can you we date.
-    characterSpeakText:
-    - I just got Divorced. No!
+    rightMood: 0
+    badMood: 4
+    rightMoodResponse:
+    - Sure
+    - Wait I haven't got Divorced yet
+    - No
+    neutralMoodResponse:
+    - No
+    badMoodResponse: []
+    unlocksNextId: 
+    unlockMood: 4
+  - id: Ivan_4
+    unlocked: 1
+    playerSelectText: What is your favorite type of soda?
+    rightMood: 4
+    badMood: 4
+    rightMoodResponse: []
+    neutralMoodResponse:
+    - Root Beer?
+    badMoodResponse: []
+    unlocksNextId: 
+    unlockMood: 4
