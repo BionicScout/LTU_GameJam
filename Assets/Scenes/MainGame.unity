@@ -1663,85 +1663,100 @@ MonoBehaviour:
     dialogues:
     - playerSelectText: I'd also be pretty scared if I were in your position.
       dialogueText:
-      - We don't know what to do
-      - You're the proffesional here... do you have any suggestions?
+      - 'Her: We don''t know what to do.'
+      - 'Him: You''re the professional here... do you have any suggestions?'
       unlocksNextId: F1F2
-    - playerSelectText: 'There''s no reason for you to be afriad. '
+    - playerSelectText: 'There''s no reason for you to be afraid. '
       dialogueText:
-      - You have EVERY reason! This is the worst thing that's ever happened  to us
-      - 'You aren''t very sympathethic for a counselor '
+      - 'Him: We have EVERY reason! This is the worst thing that''s ever happened
+        to us!'
+      - 'Her: You aren''t very sympathethic for a counselor.'
       unlocksNextId: F1A2
-    - playerSelectText: Fear is a natural reaction in these kinds of situations
+    - playerSelectText: Fear is a natural reaction in these kinds of situations.
       dialogueText:
-      - Honestly, I don't know what to feel
-      - It's all just a jumbled mess
+      - 'Her: Honestly, I don''t know what to feel.'
+      - 'Him: It''s all just a jumbled mess...'
       unlocksNextId: F1S2
   - id: A1
     unlocked: 0
     dialogues:
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
+    - playerSelectText: "I\u2019m sorry, I shouldn\u2019t have made light of such
+        a serious situation."
+      dialogueText:
+      - "Her: No, no\u2026 you\u2019re right."
+      - "Him: You wouldn\u2019t have tried cracking jokes like that if you thought
+        we could be helped."
+      unlocksNextId: A1F2
+    - playerSelectText: "We won\u2019t get anywhere with attitudes like that."
+      dialogueText:
+      - "Him: Attitude!? I\u2019ll give you attitude\u2026"
+      - 'Her: ...'
+      unlocksNextId: A1A2
+    - playerSelectText: Joy can be very difficult to achieve during times like these.
+      dialogueText:
+      - "Him: It\u2019s just\u2026 We\u2019ve tried so hard, but we can\u2019t seem
+        to get it right."
+      - "Her: Everything just circles back to fear, anger, and sorrow\u2026"
+      unlocksNextId: A1S2
   - id: S1
     unlocked: 0
     dialogues:
-    - playerSelectText: 'You: Would separation truly bring you more joy, or would
-        it end in sorrow?'
+    - playerSelectText: Would separation truly bring you more joy, or would it end
+        in sorrow?
       dialogueText:
       - "Her: That\u2019s why we came here. We\u2019re lost as to what we must do."
       - "Him: You\u2019re the only one who can help us find the answer."
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
+      unlocksNextId: S1F2
+    - playerSelectText: "I\u2019ve spoken to plenty of couples. You aren\u2019t the
+        only ones with this problem."
+      dialogueText:
+      - "Him: Look, you might think we\u2019re making petty, vague complaints\u2026"
+      - "Her: Um, well we might be, but\u2026 Ugh, I can\u2019t focus when he takes
+        that serious tone."
+      unlocksNextId: S1A2
+    - playerSelectText: Happiness can be easily forgotten in the midst of suffering.
+      dialogueText:
+      - 'Him: Dear... Do I... do I make you suffer?'
+      - 'Her: If not you, who else?'
+      unlocksNextId: S1S2
   - id: F1F2
     unlocked: 0
     dialogues:
     - playerSelectText: "I suggest\u2026 that you leave this room as soon as possible."
       dialogueText:
-      - (You brandish your knife)
-      - "What the\u2014"
-      - What are you doing?!
-      - Something you should have seen coming from a mile away
-      - "HAHAHAHAHAAA\u2014"
-      - OH MY GOD RUN!!!
-      - STAY BEHIND ME, WATCH OUT!!
-      - STAY BEHIND ME, WATCH OUT!!
+      - "Him: What the\u2014"
+      - 'Her: What are you doing?!'
+      - 'You: Something you should have seen coming from a mile away because MY VOICE
+        IS RAPIDLY RISING IN VOLUME HAHAHAHAHAAA!!! '
+      - 'Her: OH MY GOD RUN!!!'
+      - 'Him: STAY BEHIND ME, WATCH OUT!!'
+      - "You: Phew. They\u2019re back together\u2026 for at least the next couple
+        hours. NEXT!"
       - (RECONNECTED)
       unlocksNextId: F1F2F3
     - playerSelectText: Nope. I was messing with you. I got nothing. You guys are
         screwed, sorry.
       dialogueText:
-      - "\u2026EXCUSE me?"
-      - You heard me.
-      - "You\u2026 You\u2019re joking, right?"
-      - "Do I look like I\u2019m joking?"
-      - ...
-      - "GET OUT OF MY OFFICE. We\u2019re done here. Shoo."
-      - (Both exit)
-      - They were never meant to be. NEXT!
+      - "Her: \u2026EXCUSE me?"
+      - 'You: You heard me.'
+      - "Him: You\u2019re joking, right?"
+      - "You: Do I look like I\u2019m joking?"
+      - 'Him + Her: ...'
+      - "You: GET OUT OF MY OFFICE. We\u2019re done here. Shoo."
+      - 'You: They were never meant to be. NEXT!'
       - (SEPARATED)
       unlocksNextId: F1F2A3
     - playerSelectText: "Parting ways won\u2019t improve your mood, but it\u2019s
         the best course of action."
       dialogueText:
-      - "Oh\u2026 but we haven\u2019t discussed for very long\u2026"
-      - "\u2026But if that\u2019s your recommendation, we\u2019ll try it."
-      - "I\u2019m sorry it has to be like this."
-      - "Don\u2019t be sorry, it isn\u2019t your fault."
-      - Well we were clueless and asked for his opinion so yes, it kind of is his
-        fault.
-      - "Um, but we won\u2019t hold it against you!"
-      - Well that went better than I thought. NEXT!
+      - "Him: Oh\u2026 we haven\u2019t discussed for very long\u2026"
+      - "Her: \u2026But if that\u2019s your recommendation, we\u2019ll try it."
+      - "You: I\u2019m sorry it has to be like this."
+      - "Her: Don\u2019t be sorry, it isn\u2019t your fault."
+      - 'Him: Well we were clueless and asked for his opinion so yes, it kind of
+        is his fault.'
+      - "Her: Um, but we won\u2019t hold it against you!"
+      - 'You: Well that went better than I thought. NEXT!'
       - (SEPARATED)
       unlocksNextId: F1F2S3
   - id: F1A2
@@ -1749,36 +1764,34 @@ MonoBehaviour:
     dialogues:
     - playerSelectText: "I\u2019m sorry, let me rephrase that\u2026"
       dialogueText:
-      - DO NOT BE AFRAID. (Turns into biblical angel)
-      - '!!!'
+      - 'You: DO NOT BE AFRAID.'
+      - 'Him + Her: !!!'
       - (Both instantly die and evaporate in fear)
       - ...
-      - .....
-      - .........
-      - "\u2026Not what I had in mind, but that works. NEXT!"
-      - (Reconnected)
+      - "You: \u2026Not what I had in mind, but that works. NEXT!"
+      - (RECONNECTED)
       unlocksNextId: F1A2F3
     - playerSelectText: Well excuuuuuse me for trying to give my professional advice!
       dialogueText:
-      - Well excuuuuuse me for trying to give my professional advice!
-      - Who said I was a professional? My advice, on the other hand, is AT LEAST
-        as professional as I make it out to be.
-      - "Professional or not, I\u2019m not hearing another word out of you."
-      - Hmph. I could care less about our relationship if people talk to us like.
-        THAT.
-      - "\u2026Not my best work. Oh well. NEXT!"
+      - "Him: A professional counselor wouldn\u2019t say things like that!"
+      - 'You: Who said I was a professional? My advice, on the other hand, is AT
+        LEAST as professional as I make it out to be.'
+      - "Her: Professional or not, I\u2019m not hearing another word out of you."
+      - 'Him: Hmph. I could care less about our relationship if people talk to us
+        like THAT.'
+      - "You: \u2026Not my best work. Oh well. NEXT!"
       - (SEPARATED)
       unlocksNextId: F1A2A3
     - playerSelectText: "I know it\u2019s hard to admit, but it\u2019s just another
         step down the path of life."
       dialogueText:
-      - "I know it\u2019s hard to admit, but it\u2019s just another step down the
-        path of life."
-      - If being together causes so much dissatisfaction? Yes.
-      - "Huh. I didn\u2019t realize it would be that simple."
-      - "Huh. I didn\u2019t realize it would be that simple."
-      - I understand. Thank you for your advice, and goodbye.
-      - Likewise. Farewell.
+      - "Her: So you\u2019re saying to just\u2026 move on?"
+      - 'You: If being together causes so much dissatisfaction? Yes.'
+      - "Him: Huh. I didn\u2019t realize it would be that simple."
+      - 'You: People tend to overlook simple things when their emotions get the best
+        of them.'
+      - 'Her: I understand. Thank you for your advice, and goodbye.'
+      - 'Him: Likewise. Farewell.'
       - Ah, emotions. Those little troublemakers. NEXT!
       - (SEPARATED)
       unlocksNextId: F1A2S3
@@ -1788,33 +1801,32 @@ MonoBehaviour:
     - playerSelectText: "Heheheh\u2026 brainwave disruption is only the first side
         effect."
       dialogueText:
-      - "Wh-wha\u2026 I didn\u2019t\u2026 uuuuuh\u2026"
-      - "Wh-wha\u2026 I didn\u2019t\u2026 uuuuuh\u2026"
-      - "Hold on\u2026 canyew reepeetthat pllleeeauuuh\u2026"
-      - "(Into walkie-talkie)  \u201COk, they\u2019re ready\u2026 Yes, both of them.
-        Thanks. NEXT!\u201D "
-      - 
+      - "Him: Wh-wha\u2026 I didn\u2019t\u2026 uuuuuh\u2026 (collapses)"
+      - "Her: Hold on\u2026 canyew reepeetthat pllleeeauuuh\u2026 (also collapses)"
+      - "You: (Into walkie-talkie)  Ok, they\u2019re ready\u2026 Yes, both of them.
+        Thanks. NEXT!"
+      - (RECONNECTED)
       unlocksNextId: F1S2F3
     - playerSelectText: "Ok I get that you\u2019re upset, but can you give me a little
         more to work with?"
       dialogueText:
-      - "We\u2019re trying out best, ok? This isn\u2019t easy, you know\u2026"
-      - "Yeah, it\u2019s not like we\u2019re extremely well-developed protagonists
+      - "Her: We\u2019re trying out best, ok? This isn\u2019t easy, you know\u2026"
+      - "Him: Yeah, it\u2019s not like we\u2019re extremely well-developed protagonists
         with clear goals or anything. Cut us some slack!"
-      - Hm. You make a good point.
-      - I suppose we should try and find something to work towards before we pour
-        all our efforts into this relationship.
-      - The way you said that was very logical and mature, and I agree.
-      - "\u2026Definitely did not mean to do that, but it works. NEXT!"
+      - 'You: Hm. You make a good point.'
+      - 'Her: I suppose we should try and find something to work towards before we
+        pour all our efforts into this relationship.'
+      - 'Him: The way you said that was very logical and mature, and I agree.'
+      - "You: \u2026Definitely did not mean to do that, but it works. NEXT!"
+      - (SEPARATED)
       unlocksNextId: F1S2A3
     - playerSelectText: Some time away from each other might help clear your thoughts.
       dialogueText:
-      - (Looks at Her)
-      - (Looks at Him)
-      - ...
-      - "That might work. Let\u2019s call it a month."
-      - Sure. Sounds good to me
-      - "I don\u2019t know why I was expecting anything else. NEXT!"
+      - 'Him: (Looks at Her) ...'
+      - 'Her: (Looks at Him) ...'
+      - "Him: That might work. Let\u2019s call it a month."
+      - 'Her: Sure. Sounds good to me.'
+      - "You: I don\u2019t know why I was expecting anything else. NEXT!"
       - (SEPARATED)
       unlocksNextId: F1S2S3
   - id: A1F2
@@ -1822,51 +1834,73 @@ MonoBehaviour:
     dialogues:
     - playerSelectText: FINALLY someone understands! I was right all along!
       dialogueText:
-      - Uh, about what?
-      - Sarcasm CAN be taken seriously! At last, I can make sarcastic jokes WHENEVER
-        I WANT!! HAHAHAHAHA!!
-      - "I\u2026 I\u2019m not sure I get it, but I don\u2019t like the way you laughed."
-      - "Yeaaahhh me neither. It made me uncomfortable, which is even worse, because
-        it was a laugh. I\u2019m outa here."
-      - Hm. Who would have guessed that this dumpster fire of an ending would make
-        no sense whatsoever. NEXT!
+      - 'Him: Uh, about what?'
+      - 'You: Sarcasm CAN be taken seriously! At last, I can make sarcastic jokes
+        WHENEVER I WANT!! HAHAHAHAHA!!'
+      - "Her: I\u2026 I\u2019m not sure I get it, but I don\u2019t like the way you
+        laughed."
+      - "Him: Yeaaahhh me neither. It made me uncomfortable, which is even worse,
+        because it was a laugh. I\u2019m outa here."
+      - 'You: Hm. Who would have guessed that this dumpster fire of an ending would
+        make no sense whatsoever. NEXT!'
+      - (SEPARATED)
       unlocksNextId: A1F2F3
     - playerSelectText: "So\u2026 you guys are cool if I keep making sarcastic comments?"
       dialogueText:
-      - "So\u2026 you guys are cool if I keep making sarcastic comments?\u201D "
-      - "Wait\u2026 Maybe that\u2019s just it!"
-      - "What do you mean? They\u2019re obviously making fun of us."
-      - "Yes, and that\u2019s the idea. This whole breakup is a joke. Why are we
-        still here? Just to suffer?"
-      - "\u2026Perhaps you\u2019re right. Come to think of it, I can\u2019t give
-        an exact reason as to why we\u2019re here."
-      - "I\u2019m counseling you, that\u2019s why."
-      - "I\u2019m counseling you, that\u2019s why."
-      - "Yeah, we can figure this out\u2026 Together!"
-      - "\u2026 I wish every couple I spoke to made decisions together like that.
+      - 'Her: Are you kidding me? Is this all a joke to you?'
+      - "Him: Wait\u2026 Maybe that\u2019s just it!"
+      - "Her: What do you mean? They\u2019re obviously making fun of us."
+      - "Him: Yes, and that\u2019s the idea. This whole breakup is a joke. Why are
+        we still here? Just to suffer?"
+      - "Her: \u2026Perhaps you\u2019re right. Come to think of it, I can\u2019t
+        give an exact reason as to why we\u2019re here."
+      - "You: I\u2019m counseling you, that\u2019s why."
+      - "Her: But it\u2019s still silly. We\u2019re complaining about a vague relationship
+        issue that we can't even  identify."
+      - "Him: Yeah, we can figure this out\u2026 Together!"
+      - "You: \u2026I wish every couple I spoke to made decisions together like that.
         NEXT!"
       - (RECONNECTED)
       unlocksNextId: A1F2S3
     - playerSelectText: "I hate to admit it, but you\u2019re right."
       dialogueText:
-      - "From what I can tell, it doesn\u2019t seem like your relationship is going
-        anywhere."
-      - "Despite all of the effort we\u2019ve poured into each other\u2026 "
-      - "Despite all of the effort we\u2019ve poured into each other\u2026"
-      - They asked for my opinion, and I gave it. NEXT!
+      - "You: From what I can tell, it doesn\u2019t seem like your relationship is
+        going anywhere."
+      - "Her: Despite all of the effort we\u2019ve poured into each other\u2026 "
+      - 'Him: ...I guess it was never meant to be.'
+      - 'You: They asked for my opinion, and I gave it. NEXT!'
       - (SEPARATED)
       unlocksNextId: A1F2A3
   - id: A1A2
     unlocked: 0
     dialogues:
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
+    - playerSelectText: Threatening your host? How unwise...
+      dialogueText:
+      - 'You: (Points glowing finger at couple) I shall dispose of you properly.'
+      - "Her: (Lunges with Knife) \u201CHIYAAA!\u201D"
+      - (You disintigrate her)
+      - "Him: \u2026Um, forget it\u2026 I\u2019ll just be going, then\u2026"
+      - 'You: Another day, another assault. NEXT!'
+      - (SEPARATED)
+      unlocksNextId: A1A2F3
+    - playerSelectText: "Hit me you won\u2019t."
+      dialogueText:
+      - "Her: For heaven\u2019s sake, just smack him already."
+      - 'Him: My pleasure!'
+      - (He punches you. You black out)
+      - (After waking up, they're both gone).
+      - "You: What the\u2026 Did they leave together? Hm. Well, they\u2019re partners
+        in crime, and that\u2019s close enough. NEXT!"
+      - (RECONNECTED)
+      unlocksNextId: A1A2A3
+    - playerSelectText: "RIGHT THERE. That\u2019s it. Resorting to violence isn\u2019t
+        the answer!"
+      dialogueText:
+      - "Him: I suppose you\u2019re right\u2026 (looks at Her)"
+      - "Her: Violence\u2026 Is the question. (looks at Him)"
+      - 'You: "What."'
+      - "Him: \u2026And the answer is YES!!"
+      - 'You: "What."'
       unlocksNextId: 
   - id: 
     unlocked: 0
