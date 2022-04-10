@@ -1628,35 +1628,35 @@ MonoBehaviour:
   - {fileID: 322816148}
   - {fileID: 1506249305}
   roundsList:
-  - id: R1
+  - id: R1Start
     unlocked: 1
     dialogues:
-    - playerSelectText: Are you aware of the consquences this may have on both of
-        you?
+    - playerSelectText: 'You: Are you aware of the consquences this may have on both
+        of you?'
       dialogueText:
-      - Well, we figure splitting up was the right thing to do.
-      - It would still be better than staying together... right?
-      - Most couples I've worked with have thought the same thing. And many of them
-        did not end up better.
-      - But I don't know if we'll ever find Joy as a couple...
-      - The outlook seems grim no matter what choice we make
+      - 'Him: Well, we figure splitting up was the right thing to do.'
+      - 'Her: It would still be better than staying together... right?'
+      - 'You: Most couples I''ve worked with have thought the same thing. And many
+        of them did not end up better.'
+      - 'Her: But I don''t know if we''ll ever find Joy as a couple...'
+      - 'Him: The outlook seems grim no matter what choice we make.'
       unlocksNextId: F1
-    - playerSelectText: Well, that is a problem if I've ever heard one
+    - playerSelectText: 'You: Well, that is a problem if I''ve ever heard one.'
       dialogueText:
-      - That's why we came to see you in the first place
-      - If it wasn't a problem, we wouldn't be here
-      - I thought a little sarcasm might break the tension
-      - You thought wrong. This is serious
-      - You can't just expect people to be joyful all the time
+      - 'Her: That''s why we came to see you in the first place.'
+      - 'Him: If it wasn''t a problem, we wouldn''t be here.'
+      - 'You: I thought a little sarcasm might break the tension.'
+      - 'Him: You thought wrong. This is serious!'
+      - 'Her: You can''t just expect people to be joyful all the time.'
       unlocksNextId: A1
-    - playerSelectText: I'm sorry you feel that way
+    - playerSelectText: 'You: I''m sorry you feel that way.'
       dialogueText:
-      - We tried our best to figure things out, but...
-      - ...Everything we tried just didn't work
-      - You're not the first couple to say that to me. I've seen many a broken couple
-        reunite in harmony.
-      - But they aren't us.
-      - You can't find joy when it was never there to begin with
+      - 'Her: We tried our best to figure things out, but...'
+      - 'Him: ...Everything we tried just didn''t work.'
+      - 'You: You''re not the first couple to say that to me. I''ve seen many a broken
+        couple reunite in harmony.'
+      - 'Him: But they aren''t us.'
+      - 'Her: You can''t find joy when it was never there to begin with.'
       unlocksNextId: S1
   - id: F1
     unlocked: 0
@@ -1676,6 +1676,33 @@ MonoBehaviour:
       - Honestly, I don't know what to feel
       - It's all just a jumbled mess
       unlocksNextId: F1S2
+  - id: A1
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: S1
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 'You: Would separation truly bring you more joy, or would
+        it end in sorrow?'
+      dialogueText:
+      - "Her: That\u2019s why we came here. We\u2019re lost as to what we must do."
+      - "Him: You\u2019re the only one who can help us find the answer."
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
   - id: F1F2
     unlocked: 0
     dialogues:
@@ -1790,18 +1817,6 @@ MonoBehaviour:
       - "I don\u2019t know why I was expecting anything else. NEXT!"
       - (SEPARATED)
       unlocksNextId: F1S2S3
-  - id: A1
-    unlocked: 0
-    dialogues:
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
   - id: A1F2
     unlocked: 0
     dialogues:
@@ -1841,19 +1856,7 @@ MonoBehaviour:
       - They asked for my opinion, and I gave it. NEXT!
       - (SEPARATED)
       unlocksNextId: A1F2A3
-  - id: 
-    unlocked: 0
-    dialogues:
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-  - id: 
+  - id: A1A2
     unlocked: 0
     dialogues:
     - playerSelectText: 
@@ -2058,12 +2061,12 @@ MonoBehaviour:
       dialogueText: []
       unlocksNextId: 
   startText:
-  - Another appointment. If I do recall correctly, you two have been through a lot
-    together.
-  - Tell me again, why do you think seperation from each other is the best course
-    of action?
-  - We have been doing this for a long time.
-  - And we are tired of doing it
+  - 'You: ...Another appointment. If I do recall correctly, you two have been through
+    a lot together.'
+  - 'You: Tell me again, why do you think seperation from each other is the best
+    course of action?'
+  - 'Him: We have been doing this for a long time...'
+  - 'Her: ...And we are tired of doing it.'
   - ...
 --- !u!4 &2008590250
 Transform:
