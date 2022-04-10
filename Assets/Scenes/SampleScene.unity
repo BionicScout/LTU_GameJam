@@ -929,8 +929,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 8
-  m_HorizontalAlignment: 2
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1600,7 +1600,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2008590250}
   - component: {fileID: 2008590249}
-  - component: {fileID: 2008590251}
   m_Layer: 0
   m_Name: Script Holder
   m_TagString: Untagged
@@ -1628,7 +1627,444 @@ MonoBehaviour:
   - {fileID: 2002172365}
   - {fileID: 322816148}
   - {fileID: 1506249305}
-  c: {fileID: 2008590251}
+  roundsList:
+  - id: R1
+    unlocked: 1
+    dialogues:
+    - playerSelectText: Are you aware of the consquences this may have on both of
+        you?
+      dialogueText:
+      - Well, we figure splitting up was the right thing to do.
+      - It would still be better than staying together... right?
+      - Most couples I've worked with have thought the same thing. And many of them
+        did not end up better.
+      - But I don't know if we'll ever find Joy as a couple...
+      - The outlook seems grim no matter what choice we make
+      unlocksNextId: F1
+    - playerSelectText: Well, that is a problem if I've ever heard one
+      dialogueText:
+      - That's why we came to see you in the first place
+      - If it wasn't a problem, we wouldn't be here
+      - I thought a little sarcasm might break the tension
+      - You thought wrong. This is serious
+      - You can't just expect people to be joyful all the time
+      unlocksNextId: A1
+    - playerSelectText: I'm sorry you feel that way
+      dialogueText:
+      - We tried our best to figure things out, but...
+      - ...Everything we tried just didn't work
+      - You're not the first couple to say that to me. I've seen many a broken couple
+        reunite in harmony.
+      - But they aren't us.
+      - You can't find joy when it was never there to begin with
+      unlocksNextId: S1
+  - id: F1
+    unlocked: 0
+    dialogues:
+    - playerSelectText: I'd also be pretty scared if I were in your position.
+      dialogueText:
+      - We don't know what to do
+      - You're the proffesional here... do you have any suggestions?
+      unlocksNextId: F1F2
+    - playerSelectText: 'There''s no reason for you to be afriad. '
+      dialogueText:
+      - You have EVERY reason! This is the worst thing that's ever happened  to us
+      - 'You aren''t very sympathethic for a counselor '
+      unlocksNextId: F1A2
+    - playerSelectText: Fear is a natural reaction in these kinds of situations
+      dialogueText:
+      - Honestly, I don't know what to feel
+      - It's all just a jumbled mess
+      unlocksNextId: F1S2
+  - id: F1F2
+    unlocked: 0
+    dialogues:
+    - playerSelectText: "I suggest\u2026 that you leave this room as soon as possible."
+      dialogueText:
+      - (You brandish your knife)
+      - "What the\u2014"
+      - What are you doing?!
+      - Something you should have seen coming from a mile away
+      - "HAHAHAHAHAAA\u2014"
+      - OH MY GOD RUN!!!
+      - STAY BEHIND ME, WATCH OUT!!
+      - STAY BEHIND ME, WATCH OUT!!
+      - (RECONNECTED)
+      unlocksNextId: F1F2F3
+    - playerSelectText: Nope. I was messing with you. I got nothing. You guys are
+        screwed, sorry.
+      dialogueText:
+      - "\u2026EXCUSE me?"
+      - You heard me.
+      - "You\u2026 You\u2019re joking, right?"
+      - "Do I look like I\u2019m joking?"
+      - ...
+      - "GET OUT OF MY OFFICE. We\u2019re done here. Shoo."
+      - (Both exit)
+      - They were never meant to be. NEXT!
+      - (SEPARATED)
+      unlocksNextId: F1F2A3
+    - playerSelectText: "Parting ways won\u2019t improve your mood, but it\u2019s
+        the best course of action."
+      dialogueText:
+      - "Oh\u2026 but we haven\u2019t discussed for very long\u2026"
+      - "\u2026But if that\u2019s your recommendation, we\u2019ll try it."
+      - "I\u2019m sorry it has to be like this."
+      - "Don\u2019t be sorry, it isn\u2019t your fault."
+      - Well we were clueless and asked for his opinion so yes, it kind of is his
+        fault.
+      - "Um, but we won\u2019t hold it against you!"
+      - Well that went better than I thought. NEXT!
+      - (SEPARATED)
+      unlocksNextId: F1F2S3
+  - id: F1A2
+    unlocked: 0
+    dialogues:
+    - playerSelectText: "I\u2019m sorry, let me rephrase that\u2026"
+      dialogueText:
+      - DO NOT BE AFRAID. (Turns into biblical angel)
+      - '!!!'
+      - (Both instantly die and evaporate in fear)
+      - ...
+      - .....
+      - .........
+      - "\u2026Not what I had in mind, but that works. NEXT!"
+      - (Reconnected)
+      unlocksNextId: F1A2F3
+    - playerSelectText: Well excuuuuuse me for trying to give my professional advice!
+      dialogueText:
+      - Well excuuuuuse me for trying to give my professional advice!
+      - Who said I was a professional? My advice, on the other hand, is AT LEAST
+        as professional as I make it out to be.
+      - "Professional or not, I\u2019m not hearing another word out of you."
+      - Hmph. I could care less about our relationship if people talk to us like.
+        THAT.
+      - "\u2026Not my best work. Oh well. NEXT!"
+      - (SEPARATED)
+      unlocksNextId: F1A2A3
+    - playerSelectText: "I know it\u2019s hard to admit, but it\u2019s just another
+        step down the path of life."
+      dialogueText:
+      - "I know it\u2019s hard to admit, but it\u2019s just another step down the
+        path of life."
+      - If being together causes so much dissatisfaction? Yes.
+      - "Huh. I didn\u2019t realize it would be that simple."
+      - "Huh. I didn\u2019t realize it would be that simple."
+      - I understand. Thank you for your advice, and goodbye.
+      - Likewise. Farewell.
+      - Ah, emotions. Those little troublemakers. NEXT!
+      - (SEPARATED)
+      unlocksNextId: F1A2S3
+  - id: F1S2
+    unlocked: 0
+    dialogues:
+    - playerSelectText: "Heheheh\u2026 brainwave disruption is only the first side
+        effect."
+      dialogueText:
+      - "Wh-wha\u2026 I didn\u2019t\u2026 uuuuuh\u2026"
+      - "Wh-wha\u2026 I didn\u2019t\u2026 uuuuuh\u2026"
+      - "Hold on\u2026 canyew reepeetthat pllleeeauuuh\u2026"
+      - "(Into walkie-talkie)  \u201COk, they\u2019re ready\u2026 Yes, both of them.
+        Thanks. NEXT!\u201D "
+      - 
+      unlocksNextId: F1S2F3
+    - playerSelectText: "Ok I get that you\u2019re upset, but can you give me a little
+        more to work with?"
+      dialogueText:
+      - "We\u2019re trying out best, ok? This isn\u2019t easy, you know\u2026"
+      - "Yeah, it\u2019s not like we\u2019re extremely well-developed protagonists
+        with clear goals or anything. Cut us some slack!"
+      - Hm. You make a good point.
+      - I suppose we should try and find something to work towards before we pour
+        all our efforts into this relationship.
+      - The way you said that was very logical and mature, and I agree.
+      - "\u2026Definitely did not mean to do that, but it works. NEXT!"
+      unlocksNextId: F1S2A3
+    - playerSelectText: Some time away from each other might help clear your thoughts.
+      dialogueText:
+      - (Looks at Her)
+      - (Looks at Him)
+      - ...
+      - "That might work. Let\u2019s call it a month."
+      - Sure. Sounds good to me
+      - "I don\u2019t know why I was expecting anything else. NEXT!"
+      - (SEPARATED)
+      unlocksNextId: F1S2S3
+  - id: A1
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: A1F2
+    unlocked: 0
+    dialogues:
+    - playerSelectText: FINALLY someone understands! I was right all along!
+      dialogueText:
+      - Uh, about what?
+      - Sarcasm CAN be taken seriously! At last, I can make sarcastic jokes WHENEVER
+        I WANT!! HAHAHAHAHA!!
+      - "I\u2026 I\u2019m not sure I get it, but I don\u2019t like the way you laughed."
+      - "Yeaaahhh me neither. It made me uncomfortable, which is even worse, because
+        it was a laugh. I\u2019m outa here."
+      - Hm. Who would have guessed that this dumpster fire of an ending would make
+        no sense whatsoever. NEXT!
+      unlocksNextId: A1F2F3
+    - playerSelectText: "So\u2026 you guys are cool if I keep making sarcastic comments?"
+      dialogueText:
+      - "So\u2026 you guys are cool if I keep making sarcastic comments?\u201D "
+      - "Wait\u2026 Maybe that\u2019s just it!"
+      - "What do you mean? They\u2019re obviously making fun of us."
+      - "Yes, and that\u2019s the idea. This whole breakup is a joke. Why are we
+        still here? Just to suffer?"
+      - "\u2026Perhaps you\u2019re right. Come to think of it, I can\u2019t give
+        an exact reason as to why we\u2019re here."
+      - "I\u2019m counseling you, that\u2019s why."
+      - "I\u2019m counseling you, that\u2019s why."
+      - "Yeah, we can figure this out\u2026 Together!"
+      - "\u2026 I wish every couple I spoke to made decisions together like that.
+        NEXT!"
+      - (RECONNECTED)
+      unlocksNextId: A1F2S3
+    - playerSelectText: "I hate to admit it, but you\u2019re right."
+      dialogueText:
+      - "From what I can tell, it doesn\u2019t seem like your relationship is going
+        anywhere."
+      - "Despite all of the effort we\u2019ve poured into each other\u2026 "
+      - "Despite all of the effort we\u2019ve poured into each other\u2026"
+      - They asked for my opinion, and I gave it. NEXT!
+      - (SEPARATED)
+      unlocksNextId: A1F2A3
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  - id: 
+    unlocked: 0
+    dialogues:
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+    - playerSelectText: 
+      dialogueText: []
+      unlocksNextId: 
+  startText:
+  - Another appointment. If I do recall correctly, you two have been through a lot
+    together.
+  - Tell me again, why do you think seperation from each other is the best course
+    of action?
+  - We have been doing this for a long time.
+  - And we are tired of doing it
+  - ...
 --- !u!4 &2008590250
 Transform:
   m_ObjectHideFlags: 0
@@ -1643,68 +2079,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2008590251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008590248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c7ae8eeb6d25694a9100df3f0cfe223, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Ivan
-  currentMood: 2
-  dialogue:
-  - id: Ivan_1
-    unlocked: 1
-    playerSelectText: Did you cheat on your wife?
-    rightMood: 3
-    badMood: 2
-    rightMoodResponse:
-    - Yes
-    neutralMoodResponse:
-    - Why do you care?
-    badMoodResponse:
-    - SHE CHEATED ON ME!
-    unlocksNextId: 
-    unlockMood: 4
-  - id: Ivan_2
-    unlocked: 1
-    playerSelectText: I think your hot.
-    rightMood: 4
-    badMood: 1
-    rightMoodResponse: []
-    neutralMoodResponse:
-    - Thanks?
-    badMoodResponse:
-    - Please Leave me alone
-    unlocksNextId: Ivan_3
-    unlockMood: 4
-  - id: Ivan_3
-    unlocked: 0
-    playerSelectText: Can you we date.
-    rightMood: 0
-    badMood: 4
-    rightMoodResponse:
-    - Sure
-    - Wait I haven't got Divorced yet
-    - No
-    neutralMoodResponse:
-    - No
-    badMoodResponse: []
-    unlocksNextId: 
-    unlockMood: 4
-  - id: Ivan_4
-    unlocked: 1
-    playerSelectText: What is your favorite type of soda?
-    rightMood: 4
-    badMood: 4
-    rightMoodResponse: []
-    neutralMoodResponse:
-    - Root Beer?
-    badMoodResponse: []
-    unlocksNextId: 
-    unlockMood: 4

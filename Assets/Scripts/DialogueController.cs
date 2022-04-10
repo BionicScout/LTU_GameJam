@@ -12,26 +12,36 @@ public class DialogueController : MonoBehaviour {
     public GameObject optionText;
 	public TMP_Text[] options;
 
-	public Character c;
+	public Round[] roundsList;
+
+	[TextArea]
+	public string[] startText;
+
+	Round round;
 
 	DialogueOption[] dialogueButtons = new DialogueOption[3];
 
 	Queue<string> characterNextText = new Queue<string>();
 
     void Start() {
+		round = roundsList[0];
 		characterText.SetActive(false);
-		characterName.text = c.name;
 		updateOptions();
-    }
+
+		// Start dialogue
+		foreach (string str in startText) {
+			characterNextText.Enqueue(str);
+		}
+
+		text.text = characterNextText.Dequeue();
+		switchText();
+	}
 
 	void updateOptions() {
-		List<DialogueOption> dialogue = c.dialogue;
+		List<DialogueOption> dialogue = round.dialogues;
 
 		int buttonIndex = 0;
 		for (int i = 0; i < dialogue.Count; i++) {
-			if (!dialogue[i].unlocked)
-				continue;
-
 			if (dialogue[i].playerSelectText.Length > 150) {
 				options[buttonIndex].text = dialogue[i].playerSelectText.Substring(0, 150);
 			} else
@@ -43,7 +53,7 @@ public class DialogueController : MonoBehaviour {
 			if (buttonIndex > 2)
 				break;
 		}
-		Debug.Log(buttonIndex);
+		
 		for (int i = 2; i >= buttonIndex; i--) {
 			dialogueButtons[i] = null;
 			options[i].text = "";
@@ -51,13 +61,7 @@ public class DialogueController : MonoBehaviour {
 	}
 
 	private void Update() {
-		if (Input.GetKeyDown(KeyCode.T)) {
-			switchText();
-		}
 
-		if (Input.GetKeyDown(KeyCode.U)) {
-			updateOptions();
-		}
 
 		if (Input.GetMouseButtonDown(0)) {
 			if (characterNextText.Count > 0) {
@@ -86,24 +90,12 @@ public class DialogueController : MonoBehaviour {
 		if (dialogueButtons[buttonIndex] == null) 
 			return;
 
-		dialogueButtons[buttonIndex].unlocked = false;
-
 		string[] displayText;
 
-		if (dialogueButtons[buttonIndex].rightMood == c.currentMood && dialogueButtons[buttonIndex].rightMood != Character.moods.NULL) {
-			displayText = dialogueButtons[buttonIndex].rightMoodResponse;
-			Debug.Log("Good");
-		}
-		else if (dialogueButtons[buttonIndex].badMood == c.currentMood && dialogueButtons[buttonIndex].badMood != Character.moods.NULL) {
-			displayText = dialogueButtons[buttonIndex].badMoodResponse;
-			Debug.Log("Bad");
-		}
-		else { 
-			displayText = dialogueButtons[buttonIndex].neutralMoodResponse;
-			Debug.Log("Neutral");
-		}
+		displayText = dialogueButtons[buttonIndex].dialogueText;
 
-		checkUnlock(dialogueButtons[buttonIndex]);
+		round.unlocked = false;
+		round = getRound(dialogueButtons[buttonIndex].unlocksNextId);
 
 		foreach (string str in displayText) {
 			characterNextText.Enqueue(str);
@@ -113,10 +105,14 @@ public class DialogueController : MonoBehaviour {
 		switchText();
 	}
 
-	void checkUnlock(DialogueOption dialogue) {
-		if(dialogue.unlockMood == c.currentMood || dialogue.rightMood == Character.moods.NULL) {
-			CharacterList.getDialogue(dialogue.unlocksNextId).unlocked = true;
+	public Round getRound(string id) {
+		foreach (Round round in roundsList) {
+			Debug.Log("Check: " + round.id + "\tId: " + id);
+			if (round.id == id) {
+				return round;
+			}
 		}
-	}
 
+		return null;
+	}
 }
