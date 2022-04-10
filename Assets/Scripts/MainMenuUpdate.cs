@@ -8,8 +8,8 @@ public class MainMenuUpdate : MonoBehaviour {
 	public TMP_Text text;
 
 	private void Start() {
+		PlayerStats.start();
 		updateText();
-		Debug.Log("Hi");
 	}
 
 	public void updateText() {

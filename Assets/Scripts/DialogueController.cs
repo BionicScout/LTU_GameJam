@@ -68,18 +68,19 @@ public class DialogueController : MonoBehaviour {
 		if (Input.GetMouseButtonDown(0)) {
 			if (characterNextText.Count > 0) {
 				string str = characterNextText.Dequeue(); ;
-				text.text = str;
 
 				if (str.IndexOf("SEPARATED") != -1) {
-					//PlayerStats.updateStats(round.id, false);
+					//updateStats(round.id, false);
 					ss.A_LoadScene(3);
 					return;
 				}
 				if (str.IndexOf("RECONNECTED") != -1) {
-					//PlayerStats.updateStats(round.id, true);
+					//updateStats(round.id, true);
 					ss.A_LoadScene(2);
 					return;
 				}
+
+				text.text = str;
 			}
 			else if (characterNextText.Count == 0 && characterText.activeSelf == true) {
 				updateOptions();
@@ -128,4 +129,21 @@ public class DialogueController : MonoBehaviour {
 
 		return null;
 	}
+
+	//public void updateStats(string id, bool isReconnected) {
+	//	Debug.Log("Error");
+
+	//	if (isReconnected)
+	//		PlayerStats.reconnected++;
+	//	else
+	//		PlayerStats.seperated++;
+
+	//	foreach (string compId in PlayerStats.uniqueIds) {
+	//		if (compId == id) {
+	//			return;
+	//		}
+	//	}
+
+	//	PlayerStats.uniqueIds.Add(id);
+	//}
 }
