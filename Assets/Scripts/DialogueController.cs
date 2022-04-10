@@ -23,6 +23,8 @@ public class DialogueController : MonoBehaviour {
 
 	Queue<string> characterNextText = new Queue<string>();
 
+	public SceneSwitcher ss;
+
     void Start() {
 		round = roundsList[0];
 		characterText.SetActive(false);
@@ -67,6 +69,17 @@ public class DialogueController : MonoBehaviour {
 			if (characterNextText.Count > 0) {
 				string str = characterNextText.Dequeue(); ;
 				text.text = str;
+
+				if (str.IndexOf("SEPARATED") != -1) {
+					//PlayerStats.updateStats(round.id, false);
+					ss.A_LoadScene(3);
+					return;
+				}
+				if (str.IndexOf("RECONNECTED") != -1) {
+					//PlayerStats.updateStats(round.id, true);
+					ss.A_LoadScene(2);
+					return;
+				}
 			}
 			else if (characterNextText.Count == 0 && characterText.activeSelf == true) {
 				updateOptions();
