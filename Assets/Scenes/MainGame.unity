@@ -1900,21 +1900,52 @@ MonoBehaviour:
       - "Her: Violence\u2026 Is the question. (looks at Him)"
       - 'You: "What."'
       - "Him: \u2026And the answer is YES!!"
-      - 'You: "What."'
-      unlocksNextId: 
-  - id: 
+      - (They both attack each other, then fade into nothingness)
+      - "You: \u2026Nothing could have prepared me for that. NEXT!"
+      - (SEPARATED)
+      unlocksNextId: A1A2S3
+  - id: A1S2
     unlocked: 0
     dialogues:
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-    - playerSelectText: 
-      dialogueText: []
-      unlocksNextId: 
-  - id: 
+    - playerSelectText: And it will continue to do so. Over and over and over...
+      dialogueText:
+      - 'Her: Um, what do you mean?'
+      - 'Him: That sounds kind of foreboding.'
+      - 'You: Continuing in this relationship will only yield the same result. Nothing
+        will change.'
+      - "Her: \u2026Nothing at all? Are you sure?"
+      - 'You: Not if time itself can help it.'
+      - "Him: In that case, separation is our only option\u2026"
+      - 'Her: Things need to change, and if this is the only way, so be it.'
+      - (Both exit)
+      - "You: Phew, glad that didn\u2019t go any further, that was heading into time
+        loop territory really fast. NEXT!\u201D "
+      - (SEPARATED)
+      unlocksNextId: A1S2F3
+    - playerSelectText: "Apparently, you aren\u2019t trying hard enough."
+      dialogueText:
+      - "Him: Well you don\u2019t have to be so up front about it."
+      - "You: lol that\u2019s my job."
+      - "Her: \u2026To be honest, that might actually be the answer."
+      - "Him: What, literally just trying harder? Pardon me for being so blunt, but
+        that\u2019s stupid."
+      - "Her: That doesn\u2019t mean it won\u2019t work."
+      - "Him: \u2026Well, if that\u2019s our best option\u2026 We\u2019ll do our
+        best."
+      - (Both exit)
+      - "You: *wheezing* I can\u2019t believe I get paid for this lmao. NEXT! "
+      - (RECONNECTED)
+      unlocksNextId: A1S2A3
+    - playerSelectText: Then it might be time to try something else.
+      dialogueText:
+      - "Her: Perhaps you\u2019re right."
+      - "Him: Maybe\u2026 We should see other people."
+      - "Her: I\u2019m down."
+      - 'Him: Works for me, bye.'
+      - 'You: Sometimes the toughest questions have the simplest answers. NEXT!'
+      - (SEPARATED)
+      unlocksNextId: A1S2S3
+  - id: S1F1
     unlocked: 0
     dialogues:
     - playerSelectText: 
